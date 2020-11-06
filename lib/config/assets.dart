@@ -6,6 +6,6 @@ class Assets{
   static const medium = 'assets/medium.png';
   static const medium_light = 'assets/medium_light.png';
   static const shubhann_project = 'assets/works/shubhann.png';
-  static const shubhann_blog = 'assets/shubhann.png';
+  static const shubhann_blog = 'assets/shubhann1.png';
 
 }

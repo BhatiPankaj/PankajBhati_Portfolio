@@ -38,15 +38,15 @@ class _HomePageState extends State<HomePage> {
         bottomNavigationBar: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle),
+              icon: Icon(Icons.account_box),
               title: Text('About'),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.chrome_reader_mode),
+              icon: Icon(Icons.note),
               title: Text('Blog'),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.mobile_screen_share),
+              icon: Icon(Icons.work),
               title: Text('Projects'),
             )
           ],

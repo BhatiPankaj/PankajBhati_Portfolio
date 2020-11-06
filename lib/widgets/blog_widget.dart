@@ -10,10 +10,13 @@ class BlogWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // final width = MediaQuery.of(context).size.width;
+    // final height = MediaQuery.of(context).size.height;
     double topBottomPadding = (index == 0 || index == length - 1) ? 16.0 : 8.0;
     return InkWell(
       onTap: ()=>html.window.open(blog.mediumUrl, 'bhatipankaj'),
       child: Card(
+        elevation: 2.0,
         margin:
         EdgeInsets.fromLTRB(16.0, topBottomPadding, 16.0, topBottomPadding),
         child: Container(
@@ -22,9 +25,12 @@ class BlogWidget extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Image.asset(
-                blog.image,
-              ),
+                Image.asset(
+                  blog.image,
+                  fit: BoxFit.fitWidth,
+                  // width:  1000,
+                  // height: 240,
+                ),
               SizedBox(
                 height: 16,
               ),
